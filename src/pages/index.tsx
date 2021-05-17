@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // import Logo from '../assets/logo.svg'
 import error from '../assets/error.png';
@@ -17,6 +18,15 @@ const Home: React.FC = () => (
     <h1>
       Hello World!
     </h1>
+
+    <Link
+      href={{
+        pathname: '/dashboard',
+        query: { id: 'Dashboard' },
+      }}
+    >
+      <a>Dashboard</a>
+    </Link>
   </Container>
 );
 
