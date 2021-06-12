@@ -2,15 +2,12 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import Link from 'next/link';
-
 import { parseCookies } from 'nookies';
 import { GetServerSideProps } from 'next';
-// import { getAPIClient } from '../services/axios';
 
-import { Container } from '../styles/pages/Home';
+import { Container } from '../../styles/pages/Home';
 
-const Dashboard: React.FC = () => {
+const Product: React.FC = () => {
   const router = useRouter();
   const {
     query: { id },
@@ -19,16 +16,8 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>Dashboard</title>
+        <title>Product</title>
       </Head>
-
-      <Link
-        href={{
-          pathname: `/product/${446}`,
-        }}
-      >
-        <a>Product</a>
-      </Link>
 
       <h1>
         {id}
@@ -57,4 +46,4 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   };
 };
 
-export default Dashboard;
+export default Product;

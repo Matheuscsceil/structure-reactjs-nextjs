@@ -32,6 +32,11 @@
     "react/jsx-props-no-spreading": "off",
     "no-use-before-define": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "camelcase": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-shadow": "off",
+    "jsx-a11y/label-has-associated-control": "off",
     "react/jsx-filename-extension": [
       1,
       {
